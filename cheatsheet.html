@@ -1,0 +1,215 @@
+npm install --save-dev --save-exact prettier
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body { 
+            background-color: skyblue;
+            }
+            .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            }
+
+            button {
+                display: inline-block;
+                background-color: #7b38d8;
+                padding: 15px;
+                width: 175px;
+                color: #ffffff;
+                text-align: center;
+                border: 4px double #ccccccaf;
+                border-radius: 10px;
+                font-size: 28px;
+                cursor: pointer;
+                margin: 5px;
+                }
+
+            h1,h4 {
+                text-align: left;
+                font-family: Arial, Helvetica, sans-serif;
+                }
+
+            .title > h4 {
+                background-color: white;
+                color: black;
+                width: 680px;
+                text-align: left;
+                }
+
+            .profile {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                }
+
+                /* Style the tab */
+            .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #c50303;
+            }
+
+            /* Style the buttons inside the tab */
+            .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+            }
+
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+            background-color: #d25050;
+            cursor: pointer;
+            }
+
+            /* Create an active/current tablink class */
+            .tab button.active {
+            background-color: #000000;
+            }
+
+            /* Style the tab content */
+            .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+            }
+
+            /* Style the boarders of the tables*/
+            table, th, td {
+            border: 1px solid black;
+            }
+
+            /* Aliging the table headers*/
+            th {
+                text-align:center;
+                }
+            
+            /* hide radio buttons */
+            input { display: none; }    
+            input + label { display: inline-block } /* show labels in line */
+            input ~ .tab { display: none }          /* hide contents */
+
+            /* show contents only for selected tab */
+            #HTML:checked ~ .tab.content1,
+            #CSS:checked ~ .tab.content2,
+            #BF:checked ~ .tab.content3,
+            #CL:checked ~ .tab.content4 { display: block; }
+
+            input + label {             /* box with rounded corner */
+            border: 1px solid #999;
+            background: #EEE;
+            padding: 4px 12px;
+            border-radius: 4px 4px 0 0;
+            position: relative;
+            top: 1px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <a href="index.html"><button type="button">Home</button></a>
+            <a href="contact.html"><button type="button">Contact</button></a>
+            <a href="cheatsheet.html"><button type="button">Cheatsheet</button></a>
+        </div>
+
+        <h2>The info that you can cheat on</h2>
+        <p>Click on the buttons below to find out more:</p>
+
+        <input type="radio" name="tabs" id="HTML" checked />
+        <label for="HTML">HTML</label>
+
+        <input type="radio" name="tabs" id="CSS" />
+        <label for="CSS">CSS</label>
+
+        <input type="radio" name="tabs" id="BF" />
+        <label for="BF">Batch Files</label>
+
+        <input type="radio" name="tabs" id="CL" />
+        <label for="CL">Command Line</label>
+
+        <div class="tab content1">
+            <h3>HTML</h3>
+            <br>
+            <br>
+            <p>Hyper Text Mark-Up Language is the building blocks for webpage design.</p>
+            <p>In order to use the tags below make sure to put <> aroud the desired tag.</p>
+            <table>
+                <th colspan="2"><h4>Tags</h4></th>
+                <tr>
+                    <th>Tag</th>
+                    <th>What it does</th>
+                </tr>
+                <tr>
+                    <td>html</td>
+                    <td>The HTML tag is the container for all other HTML elements </td>
+                </tr>
+                <tr> 
+                    <td>Head</td>
+                    <td>The head tag contains the title of the document, styles, scripts and other HTML elements. The data's data</td>
+                </tr>
+                <tr>
+                    <td>Body</td>
+                    <td>This defines the document's body.</td>
+                </tr>
+                <tr>
+                    <td>h1-h6</td>
+                    <td>These establish text getting bigger, h1 largest, to h6 being the smallest (being bigger then untagged text). </td>
+                </tr>
+                <tr>
+                    <td>br</td>
+                    <td>Creates a line break.</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>The anchor element creates a link. With href attribute it creates a hyperlink to web pages.</td>
+                </tr>
+                <tr>
+                    <td>div</td>
+                    <td>The div tag defines a division on section in an HTML document. It's used as a container for HTML elements.</td>
+                </tr>
+                <tr>
+                    <td>Meta</td>
+                    <td>The meta tag defines metadata about an html document. metadata is infromation about data.</td>
+                </tr>
+                
+            </table>
+        </div>
+        <div class="tab content2">
+            <h3>CSS</h3>
+            <p>Cascading Style Sheets is the language to design and make webpages presentable.</p>
+            <table></table> 
+        </div>
+        <div class="tab content3">
+            <h3>Batch Files</h3>
+            <p>Batch files can run a series of commands on computer basics such as files and folders, in a serial order (an algorithmic process).</p>
+        </div>
+        <div class="tab content4">
+            <h3>Command Line</h3>
+            <p>Command line allows you to execute commands quickly, not having to navigate through menus with a GUI.</p>
+        </div>
+
+    </body>
+
+
+
+
+
+
+</html>

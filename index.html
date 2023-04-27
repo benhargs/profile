@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+            background-color: skyblue;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+
+        }
+
+        button {
+            display: inline-block;
+            background-color: #7b38d8;
+            padding: 15px;
+            width: 175px;
+            color: #ffffff;
+            text-align: center;
+            border: 4px double #ccccccaf;
+            border-radius: 10px;
+            font-size: 28px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        h1,h4 {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .title > h4 {
+            background-color: white;
+            color: black;
+            width: 680px;
+            text-align: left;
+        }
+
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <a href=""><button type="button">Home</button></a>
+        <a href="contact.html"><button type="button">Contact</button></a>
+        <a href="cheatsheet.html"><button type="button">Cheatsheet</button></a>
+    </div>
+    <div class="title">
+        <div>
+            <div>
+            <img class="profile" src="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-175635218.jpg">
+            </div>
+            <div>
+                <p>
+                    <h1>Ben Hargreaves</h1>
+                    <h4>Apprentice Technology Consultant</h4>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <h4>Bio</h4>
+    <p>Here is my bio. I'm one of the apprentice technology consultants learning HTML in Leeds.</p>
+    <h3>Skills</h3>
+    <ul>
+        <li>I can neck a pint in less than 4 seconds</li>
+        <li>I can program in Python</li>
+        <li>I used to be able to do a backflip on a trampoline</li>
+        <li>I'd be great in IT support</li>
+    </ul>
+
+</body>
+
+</html>
