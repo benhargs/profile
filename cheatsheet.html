@@ -255,10 +255,15 @@ npm install --save-dev --save-exact prettier
         <div class="tab content4">
             <h3>Command Line</h3>
             <p>Command line allows you to execute commands quickly, not having to navigate through menus with a GUI.</p>
+            <table>
+                <tr>
+                    <th></th>
+                </tr>
+            </table>
         </div>
         <div class="tab content5">
             <h3>GO</h3>
-            <p>Golang was released in 2012 by Google. It has similar characteristics to C++, Python and Javascript.</p>
+            <p>Golang was released in 2012 by Google. They first started development on it in 2007. It has similar characteristics to C++, Python and Javascript.</p>
             <table>
                 <tr>
                     <td>Types of variable</td>
@@ -279,21 +284,33 @@ npm install --save-dev --save-exact prettier
 
                 <tr>
                     <td>If Statement</td>
-                    <td>This executes code if a condition is true. <br>num:=1 <br>if num==1{<br>fmt.Println("Hello world!")}</td>
+                    <td>This executes code if a condition is true. <br>num:=1 <br>if num==1{<br>fmt.Println("That's 1!")}</td>
                 </tr>
                 <tr>
                     <td>Else Statement</td>
-                    <td>This code executes if a condition previously is false, which makes this true.  <br>num:=2 <br>if num==1{ <br>fmt.Println("Hello world!")<br>}else{ <br> fmt.Println("That's not 1!")} </td>
+                    <td>This code executes if a condition previously is false, which makes this true.  <br>num:=2 <br>if num==1{ <br>fmt.Println("That's 1!")<br>}else{ <br> fmt.Println("That's not 1!")} </td>
                 </tr>
                 <tr>
                     <td>If Else If Else Statement</td>
-                    <td>This will check a variable on multiple different conditions. <br>num:=2 <br>if num==1{ <br>fmt.Println("The multiplicative identity element of integers.") <br>} else if num==0{ <br> fmt.Println("The additive identity element integers.") <br>}else{ <br>fmt.Println("That's not 0 or 1!")} </td>
+                    <td>This will check a variable on multiple different conditions. <br>num:=2 <br>if num==1{ <br>fmt.Println("The multiplicative identity element of integers.") <br>} else if num==0{ <br> fmt.Println("The additive identity element of integers.") <br>}else{ <br>fmt.Println("That's not 0 or 1!")} </td>
                 </tr>
                 <tr>
                     <td>For loops</td>
-                    <td>If a condition is not satisfied, then the loop will repeat until it is. <br> sum:=0 <br>for i:=; i<5; i++ {<br> sum+=i} </td>
+                    <td>If a condition is not satisfied, then the loop will repeat until it is. The exmaple below is a loop counting to a number. <br> count:=0 <br>for i:=0; i<5; i++ { <br> fmt.Println(count) <br> count+=i} </td>
                 </tr>
-                <td>Infinite loop<br> </td>
+                <tr>
+                    <td>Infinite loop</td>
+                    <td>If a condition is not satisfied, and it never will be then the loop will carry on repeating until the program is stopped by the user. <br>sum:=0 <br> for i:=1; i>-1; i++ { <br> sum+=i <br>}</td>
+                </tr>
+                <tr> 
+                    <td>For loop with conditional logic</td>
+                    <td>num:=0, fmt.Println("Please enter 1, 2 or 3 to get out of the loop.")<br></td>
+                </tr>
+                <tr>
+                    <td>Functions</td>
+                    <td>Functions take 0 or more arguements and return a value when called upon in the main function. <br>func add2numbers(num1 int,num2 int) int{ <br>return num1 + num2 <br>}<br>func main() {<br>fmt.Println(add2numbers(-12,23))<br>} </td>
+                </tr>
+
                     
             </table>
         </div>
