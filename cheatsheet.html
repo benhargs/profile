@@ -108,7 +108,8 @@ npm install --save-dev --save-exact prettier
             #HTML:checked ~ .tab.content1,
             #CSS:checked ~ .tab.content2,
             #BF:checked ~ .tab.content3,
-            #CL:checked ~ .tab.content4 { display: block; }
+            #CL:checked ~ .tab.content4, 
+            #GO:checked ~ .tab.content5 { display: block; }
 
             input + label {             /* box with rounded corner */
             border: 1px solid #999;
@@ -144,6 +145,9 @@ npm install --save-dev --save-exact prettier
         <input type="radio" name="tabs" id="CL" />
         <label for="CL">Command Line</label>
 
+        <input type="radio" name="tabs" id="GO" />
+        <label for="GO">Golang</label>
+
         <div class="tab content1">
             <h3>HTML</h3>
             <br>
@@ -170,7 +174,7 @@ npm install --save-dev --save-exact prettier
                 </tr>
                 <tr>
                     <td>h1-h6</td>
-                    <td>These establish text getting bigger, h1 largest, to h6 being the smallest (being bigger then untagged text). </td>
+                    <td>These establish text getting bigger, h1 being the largest, to h6 as the smallest (being bigger then untagged text). </td>
                 </tr>
                 <tr>
                     <td>br</td>
@@ -216,6 +220,7 @@ npm install --save-dev --save-exact prettier
                     <td>Pseudo-class selector</td>
                     <td>The specified element(s), but only when in the specified state. (e.g. when a cursor hovers over a link.)</td>
                 </tr>
+
             </table> 
             <table>
                 
@@ -224,14 +229,76 @@ npm install --save-dev --save-exact prettier
         <div class="tab content3">
             <h3>Batch Files</h3>
             <p>Batch files can run a series of commands on computer basics such as files and folders, in a serial order (an algorithmic process).</p>
+            <table>
+                <tr>
+                    <th>Functions</th>
+                    <th>Symbol</th>
+                    <th>Explanation</th>
+                </tr>
+                <tr>
+                    <td>Change directory</td>
+                    <td>cd.. cd foldername</td>
+                    <td>Move directory/folder</td>
+                </tr>
+                <tr>
+                    <td>Make directory</td>
+                    <td>md</td>
+                    <td>Make a new folder</td>
+                </tr>
+                <tr>
+                    <td>Remove a directory</td>
+                    <td>rd</td>
+                    <td></td> 
+                </tr>
+            </table>
         </div>
         <div class="tab content4">
             <h3>Command Line</h3>
             <p>Command line allows you to execute commands quickly, not having to navigate through menus with a GUI.</p>
         </div>
+        <div class="tab content5">
+            <h3>GO</h3>
+            <p>Golang was released in 2012 by Google. It has similar characteristics to C++, Python and Javascript.</p>
+            <table>
+                <tr>
+                    <td>Types of variable</td>
+                    <td>The 4 types of a variable are: <br>Boolean (True or False) <br>Integers(whole numbers) <br>Floats(decimal numbers) <br>Strings ("characters between parenthesis, most commonly letters and words.") </td>
+                </tr>
+                <tr>
+                    <td>Long declaration of a variable</td>
+                    <td>var howgoodisBJSS int <br>This declares a variable named howgoodisBJSS with an integer type.</td>
+                </tr>
+                <tr>
+                    <td>Short delcaration</td>
+                    <td>howgoodisBJSS := 14.5 <br>Name  Declare and Assign  Value</td>
+                </tr>
+                <tr>
+                    <td>Short assignment</td>
+                    <td>The variable's type has previously been declared in your code. You are simply changing it's value. E.g "string" can be changed to "64" but not 64 as that is an integer.</td>
+                </tr>
+
+                <tr>
+                    <td>If Statement</td>
+                    <td>This executes code if a condition is true. <br>num:=1 <br>if num==1{<br>fmt.Println("Hello world!")}</td>
+                </tr>
+                <tr>
+                    <td>Else Statement</td>
+                    <td>This code executes if a condition previously is false, which makes this true.  <br>num:=2 <br>if num==1{ <br>fmt.Println("Hello world!")<br>}else{ <br> fmt.Println("That's not 1!")} </td>
+                </tr>
+                <tr>
+                    <td>If Else If Else Statement</td>
+                    <td>This will check a variable on multiple different conditions. <br>num:=2 <br>if num==1{ <br>fmt.Println("The multiplicative identity element of integers.") <br>} else if num==0{ <br> fmt.Println("The additive identity element integers.") <br>}else{ <br>fmt.Println("That's not 0 or 1!")} </td>
+                </tr>
+                <tr>
+                    <td>For loops</td>
+                    <td>If a condition is not satisfied, then the loop will repeat until it is. <br> sum:=0 <br>for i:=; i<5; i++ {<br> sum+=i} </td>
+                </tr>
+                <td>Infinite loop<br> </td>
+                    
+            </table>
+        </div>
 
     </body>
-
 
 
 
