@@ -275,16 +275,14 @@ npm install --save-dev --save-exact prettier
                 </tr>
                 <tr>
                     <td>Short declaration</td>
-                    <td>howgoodisBJSS := 14 <br>Through inference Go will automatically make howgoodisBJSS an int type. </td>
-                </tr>
-                <tr>
-                    <td>Short assignment</td>
-                    <td>If the variable's type has previously been declared in your code. You are simply changing it's value. E.g "string" can be changed to "64" but not 64 as that is an integer.</td>
+                    <td>howgoodisBJSS := 10 <br>The type of the variable is determined by the type of the expression on the right hand side of the := operator.<br> Through inference Go will automatically make howgoodisBJSS an int type. </td>
                 </tr>
 
                 <tr>
                     <td>If Statement</td>
-                    <td>This executes code if a condition is true. <br>num:=1 <br>if num==1{<br>fmt.Println("That's 1!")}</td>
+                    <td>This executes code if a condition is true. <br>num:=1 <br>if num==1{<br>fmt.Println("That's 1!")} <br>
+                        If num is equal to 1 then the code above will output 'That's 1!' to the user.
+                    </td>
                 </tr>
                 <tr>
                     <td>Else Statement</td>
