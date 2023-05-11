@@ -266,20 +266,20 @@ npm install --save-dev --save-exact prettier
             <p>Golang was released in 2012 by Google. They first started development on it in 2007. It has similar characteristics to C++, Python and Javascript.</p>
             <table>
                 <tr>
-                    <td>Types of variable</td>
-                    <td>The 4 types of a variable are: <br>Boolean (True or False) <br>Integers(whole numbers) <br>Floats(decimal numbers) <br>Strings ("characters between parenthesis, most commonly letters and words.") </td>
+                    <td>Basic types of variable</td>
+                    <td>The 3 basic types of a variable, which are: <br>Boolean (True or False) <br>Numbers - The data type can vary from int8-int64, unit can only store non-negative integers. Be non-negative but the solid principle is the type of being) <br>Strings ("characters between parenthesis, most commonly letters and words.") </td>
                 </tr>
                 <tr>
                     <td>Long declaration of a variable</td>
                     <td>var howgoodisBJSS int <br>This declares a variable named howgoodisBJSS with an integer type.</td>
                 </tr>
                 <tr>
-                    <td>Short delcaration</td>
-                    <td>howgoodisBJSS := 14.5 <br>Name  Declare and Assign  Value</td>
+                    <td>Short declaration</td>
+                    <td>howgoodisBJSS := 14 <br>Through inference Go will automatically make howgoodisBJSS an int type. </td>
                 </tr>
                 <tr>
                     <td>Short assignment</td>
-                    <td>The variable's type has previously been declared in your code. You are simply changing it's value. E.g "string" can be changed to "64" but not 64 as that is an integer.</td>
+                    <td>If the variable's type has previously been declared in your code. You are simply changing it's value. E.g "string" can be changed to "64" but not 64 as that is an integer.</td>
                 </tr>
 
                 <tr>
@@ -296,19 +296,23 @@ npm install --save-dev --save-exact prettier
                 </tr>
                 <tr>
                     <td>For loops</td>
-                    <td>If a condition is not satisfied, then the loop will repeat until it is. The exmaple below is a loop counting to a number. <br> count:=0 <br>for i:=0; i<5; i++ { <br> fmt.Println(count) <br> count+=i} </td>
+                    <td>If a condition is not satisfied, then the loop will repeat until it is. The example below is a loop counting to a number. <br> count:=0 <br>for i:=0; i<5; i++ { <br> fmt.Println(count) <br> count+=i} </td>
                 </tr>
                 <tr>
                     <td>Infinite loop</td>
-                    <td>If a condition is not satisfied, and it never will be then the loop will carry on repeating until the program is stopped by the user. <br>sum:=0 <br> for i:=1; i>-1; i++ { <br> sum+=i <br>}</td>
+                    <td>If a condition is not satisfied, and it never will be then the loop will carry on repeating until the program is stopped by the user. <br> for i:=0; i>-1; i++ { <br>   if i ==100{<br>         i=0<br>     }<br>   }</td>
                 </tr>
                 <tr> 
                     <td>For loop with conditional logic</td>
-                    <td>num:=0, fmt.Println("Please enter 1, 2 or 3 to get out of the loop.")<br></td>
+                    <td>num:=0 <br>for num != 1 && num != 2 && num != 3 { <br> fmt.Println("Please enter 1, 2 or 3 to get out of the loop.") <br>fmt.Println("Please enter a number: ") <br>fmt.Scanln(&num)<br>}<br>} </td>
                 </tr>
                 <tr>
                     <td>Functions</td>
                     <td>Functions take 0 or more arguements and return a value when called upon in the main function. <br>func add2numbers(num1 int,num2 int) int{ <br>return num1 + num2 <br>}<br>func main() {<br>fmt.Println(add2numbers(-12,23))<br>} </td>
+                </tr>
+                <tr>
+                    <td>Go mod init</td>
+                    <td></td>
                 </tr>
 
                     
